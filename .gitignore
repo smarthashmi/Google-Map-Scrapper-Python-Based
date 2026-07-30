@@ -6,10 +6,20 @@ __pycache__/
 venv/
 env/
 
-# Scraped data & runtime (large files — keep local only)
-/data/
+# Runtime checkpoint (resume state — not leads)
 /state/
-*.xlsx
+
+# Ignore huge daily scrape dumps (duplicates of by_state masters)
+/data/20*/
+/data/*.zip
+
+# Keep published lead datasets:
+#   data/by_state/
+#   data/by_state_small/
+#   data/by_state_removed_corp/
+#   data/ALL_*.csv / .xlsx
+#   data/SMALL_*.csv / .xlsx
+#   data/REMOVED_*.csv
 
 # OS / IDE
 .DS_Store
