@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Scraped data & runtime (large files — keep local only)
+data/
+state/
+*.csv
+*.xlsx
+*.json
+!scraper/data/usa_geo.json
+!requirements.txt
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
